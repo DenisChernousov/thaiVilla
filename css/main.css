@@ -1,0 +1,377 @@
+/* USER VARIABLES SECTION */
+
+:root {
+
+	--text: #000;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: roboto-st, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+/* .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; } */
+
+/* FONTS LOAD SECTION */
+
+@font-face {
+	src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+	font-family: "roboto-st";
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: var(--accent);
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+	border-color: red;
+}
+
+input:required:valid,
+textarea:required:valid {
+	border-color: green;
+}
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+
+}
+
+html {
+	font-size: 16px;
+}
+
+/* USER STYLES */
+
+.header {
+	width: 90rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container {
+	max-width: 73.1rem;
+	margin: 0 auto;
+	padding: 0.3rem;
+}
+
+.nav {
+	margin-top: 3.9rem;
+	margin-bottom: 8.8rem;
+
+}
+
+.nav__inner {}
+
+.nav__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__item {
+	list-style-type: none;
+}
+
+.nav__link {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #009ACD;
+}
+
+.nav__link:hover {
+	color: #077230;
+	transition: 0.3s ease;
+}
+
+.header__inner {
+	height: 53.1rem;
+	background-image: url(../images/bg-header.jpg);
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-size: cover;
+	background-position: top;
+	/* background-position-y: 1rem; */
+	/* background-position-x: 10rem; */
+
+	padding-top: 3.25rem;
+
+}
+
+.header__title {
+	font-family: 'Inria Serif';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 4.25rem;
+	background-color: #fff;
+	width: 30rem;
+	padding-left: 5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-right: 1rem;
+	margin-top: 9rem;
+
+}
+
+.header__subtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+	text-align: justify;
+	color: #FFFFFF;
+	max-width: 30rem;
+	margin-left: 5rem;
+	margin-top: 3.6rem;
+}
+
+.header__link {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+	background: linear-gradient(90deg, #009ACD 0%, #D0F9F2 100%);
+	color: #fff;
+	text-decoration: none;
+	padding: 1.6rem 4.4rem;
+}
+
+.about__inner {
+	display: flex;
+	margin-bottom: 6.3rem;
+}
+
+.about__photo img {
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	margin: 5rem;
+}
+
+.about__info {}
+
+.about__name {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3.1rem;
+	line-height: 3.7rem;
+}
+
+.about__text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+}
+
+.about__phone {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.5rem;
+	line-height: 2.9rem;
+	text-transform: uppercase;
+	margin-top: 2rem;
+}
+
+.about__phone-link {
+	color: #000;
+	text-decoration: none;
+}
+
+.wave {
+	width: 90rem;
+	margin: 0 auto;
+	padding: 9rem 0;
+	background-image: url(../images/wave.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 5rem;
+	line-height: 6.25rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+/* 
+.map {
+	width: 90rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.map__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.map__item {
+	background-image: url(../images/taimap_big\ 1.png);
+	background-size: 140%;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	width: 650px;
+	height: 980px;
+}
+
+.pointer-1 {}
+
+.pointer-2 {}
+
+.map__info {}
+
+.map__title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 50px;
+	line-height: 59px;
+	text-transform: uppercase;
+	margin-top: 150px;
+	margin-bottom: 1rem;
+	margin-left: 4rem;
+}
+
+.map__info-detail {
+	display: flex;
+	justify-content: space-between;
+}
+
+.map__info-img img {
+	width: 500px;
+}
+
+.map__info-items {}
+
+.map__info-text {
+	font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-transform: uppercase;
+color: #000000;
+margin-left: 100px;
+margin-right: 100px;
+} */
+
+.villas {
+	width: 90rem;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #EFDFD5;
+	background-image: url(../images/w-bottom.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 5rem;
+	padding-bottom: 70vh;
+
+}
+
+.villas__inner {
+	display: flex;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+
+.villas__img {
+	margin-right: 6.25rem;
+	margin-left: 6.25rem;
+}
+
+.villas__images {
+	width: 31.3rem;
+}
+
+.villas__item {}
+
+.villas__title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3.125rem;
+	line-height: 3.7rem;
+	text-transform: uppercase;
+	color: #000000;
+	/* margin-top: 140px; */
+	margin-bottom: 2.5rem;
+
+}
+
+.villas__text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 3rem;
+}
+
+.villas__inner-invert {
+	display: flex;
+	flex-direction: row-reverse;
+}
