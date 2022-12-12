@@ -85,6 +85,10 @@ body {
 
 }
 
+img {
+	padding: 0;
+}
+
 html {
 	font-size: 16px;
 }
@@ -109,7 +113,12 @@ html {
 
 }
 
-.nav__inner {}
+.nav__inner {
+	width: 90rem;
+	margin: 0 auto;
+	padding: 0;
+	border-bottom: 3px solid #009ACD;
+}
 
 .nav__items {
 	display: flex;
@@ -237,141 +246,220 @@ html {
 	text-decoration: none;
 }
 
-.wave {
-	width: 90rem;
-	margin: 0 auto;
-	padding: 9rem 0;
-	background-image: url(../images/wave.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 900;
-	font-size: 5rem;
-	line-height: 6.25rem;
-	text-align: center;
-	text-transform: uppercase;
-	color: #FFFFFF;
-}
-
-/* 
-.map {
+.history {
 	width: 90rem;
 	margin: 0 auto;
 	padding: 0;
+
+
 }
 
-.map__inner {
+.history__inner {
 	display: flex;
-	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+
 }
 
-.map__item {
-	background-image: url(../images/taimap_big\ 1.png);
-	background-size: 140%;
-	background-repeat: no-repeat;
-	background-position: bottom left;
-	width: 650px;
-	height: 980px;
+.history__map {
+	background-image: url(../images/taimap_big.jpg);
+	padding-right: 37.8rem;
+	height: 62rem;
+	background-size: cover;
+	background-position: bottom;
 }
 
-.pointer-1 {}
+.history__info {
 
-.pointer-2 {}
+	padding: 0;
 
-.map__info {}
+}
 
-.map__title {
+.history__title {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 50px;
-	line-height: 59px;
+	font-size: 20px;
+	line-height: 23px;
 	text-transform: uppercase;
-	margin-top: 150px;
-	margin-bottom: 1rem;
-	margin-left: 4rem;
+	color: #009ACD;
+	padding: 0 0 0 50px;
+	margin-top: 25px;
+
 }
 
-.map__info-detail {
+.history__subtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 41px;
+	text-transform: uppercase;
+	color: #000000;
+	padding: 0 0 0 50px;
+	margin-bottom: 40px;
+	margin-top: 10px;
+
+}
+
+.history__slider img {
+	width: 40.6rem;
+
+}
+
+.history__text {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: justify;
+	color: #000000;
+	margin: 0 auto;
+	padding: 50px;
+	padding-right: 200px;
+
+}
+
+.history__items {
 	display: flex;
 	justify-content: space-between;
+	margin: 0 auto;
 }
 
-.map__info-img img {
-	width: 500px;
+.history__items {
+	padding: 0 0 0 50px;
+	padding-right: 200px;
 }
 
-.map__info-items {}
-
-.map__info-text {
+.history__item {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
 	font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-text-transform: uppercase;
-color: #000000;
-margin-left: 100px;
-margin-right: 100px;
-} */
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: uppercase;
+	color: #009ACD;
+}
+
+.history__item img {
+	padding-right: 5px;
+}
+
+.wave {
+	width: 90rem;
+	margin: 0 auto;
+	/* padding: 9rem 0; */
+	background: linear-gradient(0deg, #03383C 0%, rgba(3, 56, 60, 0) 100%), url(../images/wave.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 80px;
+	line-height: 130px;
+
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #03383C;
+}
+
+.wave__inner {
+
+	padding-top: 60px;
+}
+
+.wave__offer {
+
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.wave__contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wave__contact-images {
+	align-content: center;
+	margin-top: 50px;
+}
+
+.wave__contact-text {
+	display: flex;
+	justify-content: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 130px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+
+}
+
+.wave__contact-link {
+	font-size: 50px;
+
+	line-height: 130px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-left: 40px;
+
+}
+
+.wave__contact-link+.wave__contact-link {
+	margin-left: 20px;
+}
+
+
+
 
 .villas {
 	width: 90rem;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #EFDFD5;
-	background-image: url(../images/w-bottom.png);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: contain;
+	background: linear-gradient(180deg, #EFDFD5 91.67%, rgba(239, 223, 213, 0) 100%);
 	padding-top: 5rem;
-	padding-bottom: 70vh;
-
 }
 
 .villas__inner {
 	display: flex;
-	margin-bottom: 100px;
-	margin-top: 100px;
+
 }
 
-.villas__img {
-	margin-right: 6.25rem;
-	margin-left: 6.25rem;
+
+.villas__block {
+	background-color: #fff;
 }
 
-.villas__images {
-	width: 31.3rem;
+.villas__block+.villas__block {
+	margin-left: 25px;
 }
 
-.villas__item {}
+.villas__images img {
+	width: 350px;
 
-.villas__title {
+}
+
+.villas__desc {
+	text-align: center;
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 3.125rem;
-	line-height: 3.7rem;
+	font-size: 20px;
+	line-height: 23px;
 	text-transform: uppercase;
+
+	padding: 0;
 	color: #000000;
-	/* margin-top: 140px; */
-	margin-bottom: 2.5rem;
-
-}
-
-.villas__text {
-	font-family: 'Roboto';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.3rem;
-	line-height: 1.4rem;
-	text-transform: uppercase;
-	color: #000000;
-	margin-bottom: 3rem;
-}
-
-.villas__inner-invert {
-	display: flex;
-	flex-direction: row-reverse;
 }
