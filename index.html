@@ -19,11 +19,12 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inria+Serif&family=Roboto:wght@300;400;700&display=swap"
 		rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
-	<!-- <script src="libs/jquery/jquery-3.6.0.min.js" defer></script> -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 
 	<script>
 
@@ -31,54 +32,55 @@
 	<script src="js/common.js" defer></script>
 
 </head>
-<header class="header">
 
-	<!-- <div class="container"> -->
-
-	<div class="header__inner">
-		<div class="header__title">
-
-			<h1>WELCOME TO THAILAND</h1>
-		</div>
-
-		<div class="header__subtitle">
-			<p>Таиланд – один из наиболее экзотических уголков планеты; королевство, где чтят и исполняют не только светские
-				законы,но и буддийские нормы.
-				Его называют «страной улыбок», благодаря гостеприимными веселым местным жителям, которые всегда рады туристам.
-				Таиланд с первой минуты знакомства пленяет своей много-ликостью: умиротворенность, свойственная монахам, буйство
-				природы, экстремальные приключения – все это привлекает миллионы путешественников, которые приезжают сюда за
-				новыми впечатлениями.</p>
-		</div>
-
-</header>
-<!-- <div class="container"> -->
-<nav class="nav">
-
-	<div class="nav__inner">
-		<ul class="nav__items">
-			<li class="nav__item">
-				<a href="#about" class="nav__link">Обо мне</a>
-			</li>
-			<li class="nav__item">
-				<a href="#villas" class="nav__link">История тайланда</a>
-			</li>
-			<li class="nav__item">
-				<a href="#villa1" class="nav__link">Вилла Kamia</a>
-			</li>
-			<li class="nav__item">
-				<a href="#villa2" class="nav__link">Вилла Baan Fan Noi</a>
-			</li>
-			<li class="nav__item">
-				<a href="#villa3" class="nav__link">Вилла Chelay</a>
-			</li>
-
-		</ul>
-		<!-- </div> -->
-	</div>
-</nav>
 
 <body>
+	<header class="header">
 
+		<!-- <div class="container"> -->
+
+		<div class="header__inner">
+			<div class="header__title">
+
+				<h1>WELCOME TO THAILAND</h1>
+			</div>
+
+			<div class="header__subtitle">
+				<p>Таиланд – один из наиболее экзотических уголков планеты; королевство, где чтят и исполняют не только светские
+					законы,но и буддийские нормы.
+					Его называют «страной улыбок», благодаря гостеприимными веселым местным жителям, которые всегда рады туристам.
+					Таиланд с первой минуты знакомства пленяет своей много-ликостью: умиротворенность, свойственная монахам,
+					буйство
+					природы, экстремальные приключения – все это привлекает миллионы путешественников, которые приезжают сюда за
+					новыми впечатлениями.</p>
+			</div>
+
+	</header>
+	<!-- <div class="container"> -->
+	<nav class="nav">
+
+		<div class="nav__inner">
+			<ul class="nav__items">
+				<li class="nav__item">
+					<a href="#about" class="nav__link">Обо мне</a>
+				</li>
+				<li class="nav__item">
+					<a href="#villas" class="nav__link">История тайланда</a>
+				</li>
+				<li class="nav__item">
+					<a href="#villa1" class="nav__link">Виллы</a>
+				</li>
+				<li class="nav__item">
+					<a href="#villa2" class="nav__link">Транспорт</a>
+				</li>
+				<!-- <li class="nav__item">
+					<a href="#villa3" class="nav__link">Вилла Chelay</a>
+				</li> -->
+
+			</ul>
+			<!-- </div> -->
+		</div>
+	</nav>
 	<section class="about" id="about">
 		<div class="container">
 			<div class="about__inner">
@@ -153,108 +155,170 @@
 			<div class="wave__offer">
 				специальное предложение на аренду вилл в новогодние праздники!
 			</div>
-			<!-- <div class="wave__contact"> -->
-				<div class="wave__contact-text">
 
-					подробности можно узнать по имеющимся контактам
+			<div class="wave__contact-text">
 
-					<a href="" class="wave__contact-link">
-						<i class="fa-brands fa-whatsapp"></i>
-					</a>
-			
-					<a href="" class="wave__contact-link">
-						<i class="fa-brands fa-telegram"></i>
-					</a>
-			
-				</div>
-			<!-- </div> -->
+				подробности можно узнать по имеющимся контактам
+
+				<a href="" class="wave__contact-link">
+					<i class="fa-brands fa-whatsapp"></i>
+				</a>
+
+				<a href="" class="wave__contact-link">
+					<i class="fa-brands fa-telegram"></i>
+				</a>
+
+			</div>
+
 		</div>
 	</div>
 
 	<section class="villas" id="villas">
 		<div class="container">
-			<div class="villas__inner">
-				<div class="villas__block">
-					<div class="villas__images">
-						<img src="images/villa1.jpg" alt="Вилла Kamia">
-					</div>
-					<div class="villas__desc">
-						Вилла Kamia
-					</div>
+		<div class="villas__inner">
+			<div class="villas__block">
+				<div class="villas__images">
+					<img src="images/villa1.jpg" alt="Вилла Kamia">
 				</div>
-				<div class="villas__block">
-					<div class="villas__images">
-						<img src="images/villa2.jpg" alt="Вилла Kamia">
-					</div>
-					<div class="villas__desc">
-						Вилла Fan Noi
-					</div>
-				</div>
-				<div class="villas__block">
-					<div class="villas__images">
-						<img src="images/villa3.jpg" alt="Вилла Kamia">
-					</div>
-					<div class="villas__desc">
-						Вилла Amanzi
-					</div>
+				<div class="villas__desc">
+					Вилла Kamia
 				</div>
 			</div>
-			<!-- <div class="villas__inner">
-				<div class="villas__img">
-					<img src="images/villa1.jpg" alt="" class="villas__images">
+			<div class="villas__block">
+				<div class="villas__images">
+					<img src="images/villa2.jpg" alt="Вилла Kamia">
 				</div>
-				<div class="villas__item">
-					<div class="villas__title" id="villa1">
-						Kamia
-					</div>
-					<div class="villas__text">
-						Вилла Kamia с четырьмя спальнями станет прекрасным выбором для отдыха
-						на Пхукете большой кампанией друзей или семьей с детьми. Вилла
-						в Таиланде расположена на холме недалеко от песчаного пляжа Ката Ной, в
-						жилом комплексе Katamanda, который предлагает своим гостям просторный
-						общий бассейн, теннисный корт и тренажёрный зал на территории, а также
-						большой выбор ресторанов и ночных развлечений на находящихся рядом пляжей
-						Ката и Патонг.
-					</div>
+				<div class="villas__desc">
+					Вилла Fan Noi
 				</div>
 			</div>
+			<div class="villas__block">
+				<div class="villas__images">
+					<img src="images/villa3.jpg" alt="Вилла Kamia">
+				</div>
+				<div class="villas__desc">
+					Вилла Amanzi
+				</div>
+			</div>
+		</div>
 
-			<div class="villas__inner-invert">
-				<div class="villas__img" id="villa2">
-					<img src="images/villa2.jpg" alt="" class="villas__images">
-				</div>
-				<div class="villas__item">
-					<div class="villas__title">
-						Baan Fan Noi
-					</div>
-					<div class="villas__text">
-						Вилла Baan Fan Noi создана для людей, влюбленных в небеса и бесконечные
-						морские горизонты. Органично вписанное в окружающий ландшафт, здание
-						словно парит над склоном холма, открывая взору чарующие виды на морское
-						побережье острова Самуи. Распахнутые панорамные окна наполняют дом
-						свежими морским бризом, ароматами цветов и пением тропических птиц.
-					</div>
-				</div>
-			</div>
-			<div class="villas__inner">
-				<div class="villas__img" id="villa3">
-					<img src="images/villa3.jpg" alt="" class="villas__images">
-				</div>
-				<div class="villas__item">
-					<div class="villas__title">
-						Chelay
-					</div>
-					<div class="villas__text">
-						Вилла Chelay представляет собой роскошное 5–этажное строение,
-						расположенное в поместье Джомчанг вдоль Мили Миллионеров
-						на Пхукете. Вилла нависает над обрывом, окружена пышным лесом и открывает
-						бескрайний вид на Андаманское море.
-					</div>
-				</div>
-			</div> -->
 		</div>
 	</section>
+	<section class="rental">
+		<div class="container">
+			<div class="rental__inner">
+				<div class="rental__title">
+					<p>также вы можете забронировать автомобиль напрокат — от эконом до бизнес-класса!</p>
+				</div>
+				<div class="rental__slider">
+					<div class="rental__items">
 
+						<div class="rental__img">
+							<a href="images/rental/mg.jpg"> <img src="images/rental/mg.jpg" alt=""></a>
+						</div>
+						<div class="rental__name">
+							<p>AG 2021г</p>
+						</div>
+						<div class="rental__price">
+							<span>
+								1 день - 1800 ฿
+							</span>
+							<span>
+								1 месяц - 23000 ฿
+							</span>
+							<span>
+								Депозит - 15000 ฿
+							</span>
+						</div>
+						<div class="rental__bookBtn">
+							<a href="#" class="rental__book-link">забронировать</a>
+						</div>
+					</div>
+
+					<div class="rental__items">
+
+						<div class="rental__img">
+							<img src="images/rental/ranger.jpg" alt="">
+						</div>
+						<div class="rental__name">
+							<p>Ford Ranger 2022г</p>
+						</div>
+						<div class="rental__price">
+							<span>
+								1 день - 3500 ฿
+							</span>
+							<span>
+								1 месяц - 45000 ฿
+							</span>
+							<span>
+								Депозит - 15000 ฿
+							</span>
+						</div>
+						<div class="rental__bookBtn">
+							<a href="#" class="rental__book-link">забронировать</a>
+						</div>
+					</div>
+
+					<div class="rental__items">
+						<div class="rental__img">
+							<img src="images/rental/Fortuner.jpg" alt="">
+						</div>
+						<div class="rental__name">
+							<p>Toyota Fortuner 2021г</p>
+						</div>
+						<div class="rental__price">
+							<span>
+								1 день - 2500 ฿
+							</span>
+							<span>
+								1 месяц - 42000 ฿
+							</span>
+							<span>
+								Депозит - 15000 ฿
+							</span>
+						</div>
+						<div class="rental__bookBtn">
+							<a href="#" class="rental__book-link">забронировать</a>
+						</div>
+					</div>
+
+					<div class="rental__items">
+						<div class="rental__img">
+							<img src="images/rental/pjsport.jpg" alt="">
+						</div>
+						<div class="rental__name">
+							<p>Toyota Fortuner 2021г</p>
+						</div>
+						<div class="rental__price">
+							<span>
+								1 день - 2800 ฿
+							</span>
+							<span>
+								1 месяц - 42.000 ฿
+							</span>
+							<span>
+								Депозит - 15000 ฿
+							</span>
+						</div>
+						<div class="rental__bookBtn">
+							<a href="#" class="rental__book-link">забронировать</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+
+		<div class="footer__inner">
+
+		</div>
+	</footer>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>
