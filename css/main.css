@@ -709,7 +709,7 @@ html {
 	width: 46.1rem;
 }
 .villas__desc{
-	width: 46.1rem;
+	width: 44.5rem;
 }
 .nav__item {
 	
@@ -735,7 +735,7 @@ html {
 	width: 46.1rem;
 }
 .villas__desc{
-	width: 46.1rem;
+	width: 44.1rem;
 }
 .nav__item {
 	
@@ -761,6 +761,28 @@ html {
 	width: 46.1rem;
 }
 .villas__desc{
+	width: 44.3rem;
+}
+}
+@media (max-width: 350px) {
+
+	body,
+	html {
+		font-size: 3.5px;
+	}
+	.history__item {
+		margin-top: 4rem;
+	}
+	.rental__img img {
+    max-width: 46.1rem;
+}
+.villas__images {
+	width: auto;
+}
+.villas__images img{
 	width: 46.1rem;
+}
+.villas__desc{
+	width: 44.3rem;
 }
 }
