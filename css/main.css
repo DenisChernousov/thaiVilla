@@ -279,12 +279,12 @@ html {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
-	line-height: 23px;
+	font-size: 1.3rem;
+	line-height: 1.4rem;
 	text-transform: uppercase;
 	color: #009ACD;
-	padding: 0 0 0 50px;
-	margin-top: 25px;
+	padding: 0 0 0 3.1rem;
+	margin-top: 1.6rem;
 
 }
 
@@ -292,13 +292,13 @@ html {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 35px;
-	line-height: 41px;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
 	text-transform: uppercase;
 	color: #000000;
-	padding: 0 0 0 50px;
-	margin-bottom: 40px;
-	margin-top: 10px;
+	padding: 0 0 0 3.1rem;
+	margin-bottom: 2.5rem;
+	margin-top: 0.6rem;
 
 }
 
@@ -347,6 +347,7 @@ html {
 
 .history__item img {
 	padding-right: 5px;
+	max-width: 2rem;
 }
 
 .wave {
@@ -416,16 +417,15 @@ html {
 	margin-left: 2.5rem;
 
 }
-.wave__contact-link:hover{
+
+.wave__contact-link:hover {
 	transform: scale(1.1);
 	transition: 0.3s ease;
 }
+
 .wave__contact-link+.wave__contact-link {
 	margin-left: 2.3rem;
 }
-
-
-
 
 .villas {
 	width: 90rem;
@@ -434,7 +434,7 @@ html {
 	background: linear-gradient(180deg, #EFDFD5 91.67%, rgba(239, 223, 213, 0) 100%);
 	padding-top: 5rem;
 	padding-bottom: 11.7rem;
-	
+
 }
 
 .villas__inner {
@@ -446,7 +446,7 @@ html {
 
 
 .villas__block {
-display: block;
+	display: block;
 
 }
 
@@ -458,6 +458,7 @@ display: block;
 	text-align: center;
 	margin: 0 auto;
 }
+
 .villas__images img {
 	width: 28.9rem;
 	text-align: center;
@@ -472,62 +473,71 @@ display: block;
 	font-size: 1.6rem;
 	line-height: 1.4rem;
 	text-transform: uppercase;
-background-color: #fff;
+	background-color: #fff;
 	padding: 1rem;
 	width: 27rem;
-	margin-left: 60px;
+	/* margin-left: 3.75rem;
+	 */
+	 margin-left: auto;
+		margin-right: auto;
 	color: #000000;
 }
+
 .rental__inner {
 	margin-top: 3.8rem;
-margin-bottom: 3.1rem;
+	margin-bottom: 3.1rem;
 }
-.rental__title p{
-	
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 1.6rem;
-line-height: 2.5rem;
-text-align: center;
-text-transform: uppercase;
 
-color: #000000;
-}
-.rental__slider {
+.rental__title p {
 
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	text-align: center;
+	text-transform: uppercase;
 
+	color: #000000;
 }
-.rental{
-	
-}
+
+.rental__slider {}
+
+.rental {}
+
 .rental__items {
 	text-align: center;
 
 }
-.prev, .next{
+
+.prev,
+.next {
 	cursor: pointer;
 	width: 2rem;
 	z-index: 22;
 	opacity: 70%;
 
 }
-.prev:hover, .next:hover{
+
+.prev:hover,
+.next:hover {
 	opacity: 100%;
 }
+
 .prev {
 	position: absolute;
 	top: 40%;
-transform: rotate(180deg);
+	transform: rotate(180deg);
 
 }
+
 .next {
 	position: absolute;
 	top: 40%;
-	left:97%;
+	left: 97%;
 }
 
-.rental__name{
+.rental__name {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
@@ -536,20 +546,23 @@ transform: rotate(180deg);
 	text-align: center;
 	text-decoration-line: unone;
 	text-transform: uppercase;
-		color: #000;
+	color: #000;
 }
-.rental__img img{
+
+.rental__img img {
 	margin: 0 auto;
 	max-width: 28.1rem;
-	
+
 }
+
 .rental__price {
-margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
-.rental__bookBtn {
-}
+
+.rental__bookBtn {}
+
 .rental__book-link {
-	
+
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
@@ -557,12 +570,14 @@ margin-bottom: 1rem;
 	line-height: 2.5rem;
 	text-decoration-line: underline;
 	text-transform: uppercase;
-		color: #9D9D9D;
+	color: #9D9D9D;
 
 }
-.rental__book-link:hover{
+
+.rental__book-link:hover {
 	color: #3a3939;
 }
+
 .footer__inner {
 	width: 90rem;
 	margin: 0 auto;
@@ -570,4 +585,182 @@ margin-bottom: 1rem;
 	background-position: top;
 	background-size: cover;
 	height: 56rem;
+}
+
+@media (max-width: 1400px) {
+
+	body,
+	html {
+		font-size: 14px;
+	}
+	/* .villas__desc {
+		margin-left: 53px;
+		} */
+}
+
+
+@media (max-width: 1260px) {
+
+	body,
+	html {
+		font-size: 13px;
+	}
+	/* .villas__desc {
+		margin-left: 3rem;
+		} */
+}
+
+@media (max-width: 1170px) {
+
+	body,
+	html {
+		font-size: 11px;
+	}
+	.about__inner {
+  
+    margin-bottom: 2.3rem;
+}
+	.history__map {
+		height: 69rem;
+	}
+
+}
+@media (max-width: 990px) {
+
+	body,
+	html {
+		font-size: 10px;
+	}
+
+
+}
+@media (max-width: 898px) {
+
+	body,
+	html {
+		font-size: 9.5px;
+	}
+}
+@media (max-width: 858px) {
+
+	body,
+	html {
+		font-size: 9px;
+	}
+}
+@media (max-width: 810px) {
+
+	body,
+	html {
+		font-size: 8.5px;
+	}
+}
+@media (max-width: 762px) {
+
+	body,
+	html {
+		font-size: 8px;
+	}
+}
+@media (max-width: 720px) {
+
+	body,
+	html {
+		font-size: 7px;
+	}
+}
+@media (max-width: 630px) {
+
+	body,
+	html {
+		font-size: 6px;
+	}
+}
+@media (max-width: 536px) {
+
+	body,
+	html {
+		font-size: 5.5px;
+	}
+}
+@media (max-width: 490px) {
+
+	body,
+	html {
+		font-size: 5px;
+	}
+}
+@media (max-width: 420px) {
+
+	body,
+	html {
+		font-size: 4.5px;
+	}
+	.history__item {
+		margin-top: 4rem;
+	}
+	.rental__img img {
+    max-width: 46.1rem;
+}
+.villas__images {
+	width: auto;
+}
+.villas__images img{
+	width: 46.1rem;
+}
+.villas__desc{
+	width: 46.1rem;
+}
+.nav__item {
+	
+	margin-right: 12rem;
+}
+}
+@media (max-width: 415px) {
+
+	body,
+	html {
+		font-size: 4.5px;
+	}
+	.history__item {
+		margin-top: 4rem;
+	}
+	.rental__img img {
+    max-width: 46.1rem;
+}
+.villas__images {
+	width: auto;
+}
+.villas__images img{
+	width: 46.1rem;
+}
+.villas__desc{
+	width: 46.1rem;
+}
+.nav__item {
+	
+	margin-right: 12rem;
+}
+}
+@media (max-width: 390px) {
+
+	body,
+	html {
+		font-size: 4px;
+	}
+	.history__item {
+		margin-top: 4rem;
+	}
+	.rental__img img {
+    max-width: 46.1rem;
+}
+.villas__images {
+	width: auto;
+}
+.villas__images img{
+	width: 46.1rem;
+}
+.villas__desc{
+	width: 46.1rem;
+}
 }
