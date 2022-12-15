@@ -482,6 +482,25 @@ html {
 		margin-right: auto;
 	color: #000000;
 }
+.villas__text{
+	display: flex;
+	justify-content: center;
+	margin-top: 6rem;
+}
+.villas__text a{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	text-decoration-line: underline;
+	text-transform: uppercase;
+	color: #9D9D9D;
+
+}
+.villas__text a:hover{
+	color: #3a3939;
+}
 
 .rental__inner {
 	margin-top: 3.8rem;
